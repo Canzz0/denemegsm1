@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-mega-menu/1.0.0/bootstrap-mega-menu.min.css"
+      integrity="sha512-Dzi0zz9zCe2olZNhq+wnzGjO5ILOv8f/yD6j8srW+XGnnv9dUN04eEoIdVHxQqiy8uBn21niIWQpiCzYJEH3yg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+
+    <link
+      rel="shortcut icon"
+      href="/assets/netgsm.ico"
+      type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="style.css" />
+
+    <title>NetGSM</title>
+  </head>
+  <body>
+    <div class="mobMenuHMH d-lg-none d-block d-md-block">
+      <div class="mobileLogo">
+        <a
+          class="navbar-brand"
+          href="javascript:void(0)">
+          <img
+            src="./assets/images/netgsm-logo.svg"
+            alt="logo"
+            class="img-fluid" />
+        </a>
+      </div>
+
+      <ul>
+        <li>
+          <a href="/"><i class="fas fa-home"></i> Anasayfa</a>
+        </li>
+        <li>
+          <a
+            href="/"
+            target="_blank"
+            ><i class="fas fa-sign-in-alt"></i> Online İşlemler</a
+          >
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-user-plus"></i> Üyelik</a>
+        </li>
+
+        <li class="has-submenu">
+          <a
+            href="javascript:void(0)"
+            data-submenu="hizmetler"
+            ><i class="fas fa-th-large"></i> Hizmetler</a
+          >
+          <div
+            id="hizmetler"
+            class="submenu">
+            <div class="submenu-header">
+              <a
+                href="javascript:void(0)"
+                data-submenu-close="hizmetler"
+                >Hizmetler</a
+              >
+            </div>
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="sabittelefon"
+                  >Sabit Telefon</a
+                >
+                <div
+                  id="sabittelefon"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="sabittelefon"
+                      >Sabit Telefon</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">0850'li Numara</a></li>
+                    <li><a href="/">Coğrafi Numara</a></li>
+                    <li><a href="/">0800'lü Numara</a></li>
+                    <li><a href="/">Kurumsal WhatsApp Hattı</a></li>
+                    <li><a href="/">Numara Taşıma</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="toplusms"
+                  >SMS</a
+                >
+                <div
+                  id="toplusms"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="toplusms"
+                      >SMS</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Toplu SMS</a></li>
+                    <li><a href="/">OTP SMS</a></li>
+                    <li><a href="/">Sesli Mesaj</a></li>
+                    <li><a href="/">İleti Yönetim Sistemi (İYS)</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="sanalsantral"
+                  >Sanal Santral</a
+                >
+                <div
+                  id="sanalsantral"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="sanalsantral"
+                      >Sanal Santral</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Netsantral (Bulut)</a></li>
+                    <li><a href="/">Netsantral (Lokal)</a></li>
+                    <li>
+                      <a href="/">Çağrı Merkezi Yazılımı <br /><small class="small">(Netasistan)</small></a>
+                    </li>
+                    <li><a href="/">Özel (Custom) API</a></li>
+                    <li><a href="/">Cihazlar</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="gsm"
+                  >GSM <small class="badge bg-warning">Yeni</small></a
+                >
+                <div
+                  id="gsm"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="gsm"
+                      >GSM</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Bireysel</a></li>
+                    <li><a href="/">Kurumsal</a></li>
+                    <li>
+                      <a href="/">M2M<span class="light-slash">/</span>IoT Data Hattı</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="/">İnternet <small class="badge bg-danger">Yeni</small></a>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="dijitalservisler"
+                  >Dijital Servisler</a
+                >
+                <div
+                  id="dijitalservisler"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="dijitalservisler"
+                      >Dijital Servisler</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Dijital Faks</a></li>
+                    <li><a href="/">Bulut PDKS</a></li>
+                    <li><a href="/">Netkumanda</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="uygulamalar"
+                  >Uygulamalar</a
+                >
+                <div
+                  id="uygulamalar"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="uygulamalar"
+                      >Uygulamalar</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Mobil</a></li>
+                    <li><a href="/">Masaüstü</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-submenu">
+          <a
+            href="javascript:void(0)"
+            data-submenu="cozumler"
+            ><i class="fas fa-handshake"></i> Çözümler</a
+          >
+          <div
+            id="cozumler"
+            class="submenu">
+            <div class="submenu-header">
+              <a
+                href="javascript:void(0)"
+                data-submenu-close="cozumler"
+                >Çözümler</a
+              >
+            </div>
+            <ul>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="ihityacagore"
+                  >İhtiyaca Göre</a
+                >
+                <div
+                  id="ihityacagore"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="ihityacagore"
+                      >İhtiyaca Göre</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Çağrı Merkezi Yazılımı</a></li>
+                    <li><a href="/">Uzaktan Çalışma</a></li>
+                    <li><a href="/">Kurumsal VoIP Hizmeti</a></li>
+                    <li>
+                      <a href="/">Mobil Uygulama ile Kullanım</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="has-submenu">
+                <a
+                  href="javascript:void(0)"
+                  data-submenu="sektoregore"
+                  >Sektöre Göre</a
+                >
+                <div
+                  id="sektoregore"
+                  class="submenu">
+                  <div class="submenu-header">
+                    <a
+                      href="javascript:void(0)"
+                      data-submenu-close="sektoregore"
+                      >Sektöre Göre</a
+                    >
+                  </div>
+                  <ul>
+                    <li><a href="/">Sağlık</a></li>
+                    <li><a href="/">E-ticaret</a></li>
+                    <li><a href="/">Eğitim</a></li>
+                    <li><a href="/">Turizm</a></li>
+                    <li><a href="/">Danışmanlık</a></li>
+                    <li><a href="/">Dernek Sendika</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="has-submenu">
+          <a
+            href="javascript:void(0)"
+            data-submenu="fiyatlar"
+            ><i class="fas fa-lira-sign"></i> Fiyatlar</a
+          >
+          <div
+            id="fiyatlar"
+            class="submenu">
+            <div class="submenu-header">
+              <a
+                href="javascript:void(0)"
+                data-submenu-close="fiyatlar"
+                >Fiyatlar</a
+              >
+            </div>
+            <ul>
+              <li><a href="/">GSM</a></li>
+              <li><a href="/">İnternet</a></li>
+              <li><a href="/">Toplu SMS</a></li>
+              <li><a href="/">Netsantral</a></li>
+              <li><a href="/">Ses Hizmeti</a></li>
+              <li><a href="/">Netasistan</a></li>
+              <li><a href="/">Sesli Mesaj</a></li>
+              <li><a href="/">Dijital Faks</a></li>
+              <li><a href="/">Bulut PDKS</a></li>
+              <li><a href="/">İleti Yönetim Sistemi (İYS)</a></li>
+              <li><a href="/">Cihazlar</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <a href="/"><i class="fas fa-laptop-code"></i> Geliştiriciler</a>
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-thumbs-up"></i> Neden Netgsm</a>
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-building"></i> Hakkımızda</a>
+        </li>
+        <li>
+          <a href="/"><i class="fas fa-phone-alt"></i> İletişim</a>
+        </li>
+        <li>
+          <a
+            href="https://bilgibankasi.netgsm.com.tr/"
+            target="_blank"
+            ><i class="fas fa-book"></i> Blog</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="mobMenuHMH-overlay"></div>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light fixed-top"
+        id="navbar_top">
+        <div class="nav-top-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a hef="/"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="">GSM</a></li>
+                    <li
+                      class="breadcrumb-item"
+                      aria-current="page">
+                      Bireysel Mobil Hat
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <div
+                class="col-md-6 d-none d-sm-none d-lg-block"
+                align="right">
+                <a hef="/">İletişim</a>
+                <a hef="/">Hakkımızda</a>
+                <a
+                  href="https://blog.netgsm.com.tr"
+                  target="_blank"
+                  >Blog</a
+                >
+                <a
+                  href="https://portal.netgsm.com.tr"
+                  target="_blank"
+                  class="login-link colorSecond"
+                  ><i class="fas fa-sign-in-alt pr-4"></i> Online İşlemler</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-4 mt-lg-0 mt-md-4">
+          <a
+            class="navbar-brand"
+            hef="/">
+            <img
+              src="./assets/images/netgsm-logo.svg"
+              alt="logo"
+              class="img-fluid" />
+          </a>
+          <button class="navbar-toggler mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse"
+            id="navHizmetler">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="cd-dropdown-wrapper">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="javascript:void(0)"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  >Hizmetler</a
+                >
+                <nav class="cd-dropdown">
+                  <h2>Hizmetler</h2>
+                  <ul class="cd-dropdown-content">
+                    <li class="has-children">
+                      <a
+                        href="javascript:void(0)"
+                        class="is-active"
+                        ><i class="fas fa-phone-alt i02x"></i> Sabit Telefon
+                      </a>
+                      <ul class="cd-dropdown-icons is-active">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>0850'li Numara</h3>
+                            <p>Yeni nesil iş telefon hizmeti</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Coğrafi Numara</h3>
+                            <p>0212, 0312 vb. 81 ile ait alan kodu</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>0800'lü Numara</h3>
+                            <p>Ücretsiz aranabilen, tüketici hattı</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Kurumsal WhatsApp Hattı</h3>
+                            <p>0850, 0212, 0312 vb. numaranızı WhatsApp'da kullanın</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/"
+                            target="_blank">
+                            <h3>Numara Taşıma</h3>
+                            <p>Numaranızı Netgsm'e taşıyın</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="has-children">
+                      <a href="javascript:void(0)"><i class="fas fa-envelope i03x"></i> SMS</a>
+                      <ul class="cd-dropdown-icons is-hidden">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Toplu SMS</h3>
+                            <p>Hedef kitlenize doğrudan ulaşın</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>OTP SMS</h3>
+                            <p>Şifre gönderimi ve anlık bildirim</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Sesli Mesaj</h3>
+                            <p>Sesinizi aynı anda binlerce kişiye ulaştırın</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>İleti Yönetim Sistemi (İYS)</h3>
+                            <p>İzinli SMS gönderimi</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="has-children">
+                      <a href="javascript:void(0)"><i class="fas fa-cloud i02x"></i> Sanal Santral</a>
+                      <ul class="cd-dropdown-icons is-hidden">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Netsantral (Bulut)</h3>
+                            <p>İnternet üzerinden yeni nesil telefon santrali</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Netsantral (Lokal)</h3>
+                            <p>Kurumsal firmaların tüm santral ve ses hizmeti</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Çağrı Merkezi Yazılımı</h3>
+                            <p>Netasistan</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Custom API</h3>
+                            <p>Netsantral özel API entegrasyonu</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Cihazlar</h3>
+                            <p>IP Telefon, Kulaklık, FXS, IP Santral</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="has-children">
+                      <a href="javascript:void(0)"
+                        ><i class="fas fa-sim-card"></i> GSM <small class="badge bg-warning">Yeni</small></a
+                      >
+                      <ul class="cd-dropdown-icons is-hidden">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Bireysel</h3>
+                            <p>Mobil Hat</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Kurumsal</h3>
+                            <p>Mobil Hat, Kurumsal Hat Yönetimi</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>M2M<span class="light-slash">/</span>IoT Data Hattı</h3>
+                            <p>Makineler Arası İletişim</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li>
+                      <a hef="/"
+                        ><i class="fas fa-wifi i03x"></i> İnternet <small class="badge bg-danger">Yeni</small></a
+                      >
+                    </li>
+
+                    <li class="has-children">
+                      <a href="javascript:void(0)"><i class="fas fa-building i05x"></i> Dijital Servisler</a>
+                      <ul class="cd-dropdown-icons is-hidden">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Dijital Faks</h3>
+                            <p>Çek - yükle - gönder.</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Bulut PDKS</h3>
+                            <p>Personel Devam Kontrol Sistemi</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Netkumanda</h3>
+                            <p>Sistemleri uzaktan yönetin.</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="has-children">
+                      <a href="javascript:void(0)"><i class="fas fa-laptop i05x"></i> Uygulamalar</a>
+                      <ul class="cd-dropdown-icons is-hidden">
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Mobil</h3>
+                            <p>Android, iOS uygulamalar</p>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="cd-dropdown-item"
+                            hef="/">
+                            <h3>Masaüstü</h3>
+                            <p>Windows uygulamalar</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </li>
+
+              <li class="nav-item has-megamenu">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="javascript:void(0)"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="true">
+                  Çözümler
+                </a>
+                <div class="dropdown-menu megamenu">
+                  <div class="row g-3">
+                    <div class="col-md-5 col-5">
+                      <div class="col-megamenu">
+                        <h6>İhtiyaca Göre</h6>
+                        <ul class="list-unstyled">
+                          <a hef="/"><li>Çağrı Merkezi Yazılımı</li></a>
+                          <a hef="/"><li>Uzaktan Çalışma</li></a>
+                          <a hef="/"><li>Kurumsal VoIP Hizmeti</li></a>
+                          <a hef="/"><li>Mobil Uygulama ile Kullanım</li></a>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-7 col-7">
+                      <div class="col-megamenu">
+                        <h6>Sektöre Göre</h6>
+                        <ul class="list-unstyled">
+                          <div class="row">
+                            <div class="col-md-5 col-6">
+                              <a hef="/"><li>Sağlık</li></a>
+                              <a hef="/"><li>E-ticaret</li></a>
+                              <a hef="/"><li>Eğitim</li></a>
+                              <a hef="/"><li>Turizm</li></a>
+                            </div>
+                            <div class="col-md-7 col-6">
+                              <a hef="/"><li>Danışmanlık</li></a>
+                              <a hef="/"><li>Dernek Sendika</li></a>
+                            </div>
+                          </div>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  hef="/"
+                  >Fiyatlar</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  hef="/"
+                  >Geliştiriciler</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  hef="/"
+                  >Neden Netgsm</a
+                >
+              </li>
+            </ul>
+
+            <a hef="/">
+              <button
+                type="button"
+                class="btn btn-primary">
+                <i class="fas fa-plus small"></i> Üyelik
+              </button>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="gsm">
+      <section class="page-diger"> 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-12 col-md-12  mb-4 mb-md-4 mb-lg-0">
+    
+    
+                        <select class="form-select form-select-lg d-block d-md-block d-lg-none mb-4" onchange="location = this.value;"> <!-- mobile view-->
+                                                        <option value="mobil-hat" >
+                                    GSM                            </option>
+                                                        <option value="internet" selected>
+                                    İnternet                            </option>
+                                                        <option value="toplu-sms" >
+                                    Toplu SMS                            </option>
+                                                        <option value="netsantral" >
+                                    Netsantral                            </option>
+                                                        <option value="ses-hizmeti" >
+                                    Ses Hizmeti                            </option>
+                                                        <option value="netasistan" >
+                                    Netasistan                            </option>
+                                                        <option value="sesli-mesaj" >
+                                    Sesli Mesaj                            </option>
+                                                        <option value="faks" >
+                                    Dijital Faks                            </option>
+                                                        <option value="netpdks" >
+                                    Bulut PDKS                            </option>
+                                                        <option value="ileti-yonetim-sistemi" >
+                                    İleti Yönetim Sistemi (İYS)                            </option>
+                                                    <option value="cihazlar">Cihazlar <i class="fas fa-external-link-alt"></i> </option>
+                        </select>
+              <div class="konuBaslik mb-0 mb-lg-4">
+                <h1>İnternet Fiyatları</h1>
+              </div>
+                        <ul class="nav flex-column paketNav mt-lg-5 d-none d-md-none d-lg-block"> <!-- web view-->
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="mobil-hat">GSM</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link active" href="internet">İnternet</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="toplu-sms">Toplu SMS</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="netsantral">Netsantral</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="ses-hizmeti">Ses Hizmeti</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="netasistan">Netasistan</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="sesli-mesaj">Sesli Mesaj</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="faks">Dijital Faks</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="netpdks">Bulut PDKS</a>
+                                </li>
+                                                        <li class="nav-item">
+                                    <a class="nav-link " href="ileti-yonetim-sistemi">İleti Yönetim Sistemi (İYS)</a>
+                                </li>
+                                                    <li class="nav-item external">
+                                <a class="nav-link" href="cihazlar" target="_blank">Cihazlar <i class="fas fa-external-link-alt"></i></a>
+                            </li>
+                        </ul>
+            </div>
+            
+            <div class="col-lg-10 col-12 col-md-12">    <section class="paketTable spotlar-bg spotlar-bg-white populerPaket mt-0">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4" align="center">
+                <div class="paket-card bg-white px-4">
+                    <div class="mb-4"><span class="badge bg-primary">xDSL<span class='light-slash'>/</span>Fiber</span></div>
+                    <div class="soft-bg-icon soft-bg-warning"> <i class="fas fa-wifi"></i> </div>
+                    <h2 class="mt-4 mb-4"><i class="fas fa-lira-sign"></i>239<span>/Ay</span> </h2>
+                    <hr class="mb-4">
+                    <div align="left">
+                        <ul class="ulli x18px mb-0 fw400">
+                            <li class="fw-bold">35<span class='light-slash'>/</span>12 Mbps'e kadar</li>
+                            <li>Taahhütsüz</li>
+                            <li>Yüksek hız, düşük ping</li>
+                            <li>Hızlı kurulum</li>
+                            <li>Kotasız</li>
+                            <li>AKN<span class='light-slash'>/</span>AKK yok</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4" align="center">
+                <div class="paket-card bg-white px-4">
+                    <div class="mb-4"><span class="badge bg-primary">xDSL<span class='light-slash'>/</span>Fiber</span></div>
+                    <div class="soft-bg-icon soft-bg-warning"> <i class="fas fa-wifi"></i> </div>
+                    <h2 class="mt-4 mb-4"><i class="fas fa-lira-sign"></i>259<span>/Ay</span> </h2>
+                    <hr class="mb-4">
+                    <div align="left">
+                        <ul class="ulli x18px mb-0 fw400">
+                            <li class="fw-bold">100<span class='light-slash'>/</span>12 Mbps'e kadar</li>
+                            <li>Taahhütsüz</li>
+                            <li>Yüksek hız, düşük ping</li>
+                            <li>Hızlı kurulum</li>
+                            <li>Kotasız</li>
+                            <li>AKN<span class='light-slash'>/</span>AKK yok</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4" align="center">
+                <div class="paket-card bg-white px-4">
+                    <div class="mb-4"><span class="badge bg-primary">Fiber</span></div>
+                    <div class="soft-bg-icon soft-bg-warning"> <i class="fas fa-wifi"></i> </div>
+                    <h2 class="mt-4 mb-4"><i class="fas fa-lira-sign"></i>349<span>/Ay</span> </h2>
+                    <hr class="mb-4">
+                    <div align="left">
+                        <ul class="ulli x18px mb-0 fw400">
+                            <li class="fw-bold">200<span class='light-slash'>/</span>30 Mbps'e kadar</li>
+                            <li>Taahhütsüz</li>
+                            <li>Yüksek hız, düşük ping</li>
+                            <li>Hızlı kurulum</li>
+                            <li>Kotasız</li>
+                            <li>AKN<span class='light-slash'>/</span>AKK yok</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
+    
+    <div class="callout callout-primary mt-4 mb-0">
+        <h4  class="accordion-button pt-0 pb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#paketDetay"><i class="fas fa-info-circle"></i> Tarife Detayları</h4>
+        <ul class="ulli notlar collapsed mt-3 x16px" id="paketDetay" >
+            <li>Tarifelerimizden yeni abone olacak ve diğer operatörlerden geçiş yapacak olan müşterilerimiz faydalanabilirler.</li>
+            <li>Yalın VDSL ve Fiber tarifelerinde yeni abone olacak kişilerden 360 TL Aktivasyon Ücreti, kurulum istenmesi halinde 400 TL Evde Kurulum Ücreti alınır.</li>
+            <li>İnternetini Netgsm'e taşıyan abonelerden 360 TL Aktivasyon Ücreti alınmayacaktır. Evde kurulum istenmesi halinde sadece 400 TL Evde Kurulum Ücreti alınır.</li>
+            <li>Modem ayarını kendisi yapan abonelerimizden Evde Kurulum Ücreti alınmamaktadır.</li>
+            <li>Tarife fiyatlarına tüm vergiler dahildir.</li>
+            <li>Abonelerimize faturaları e-posta yolu ile iletilecektir.</li>
+            <li>Hızlar, aksi belirtilmedikçe indirme hızlarına atıfta bulunur. Hız, kullanılan modemin optimum hız ve kapasitede olduğunu varsayar. Dış faktörler öngörülen hızı etkileyebilir. Ev ortamı, cihaz sınırlamaları, kullanıcı sayısı, günün saati ve WiFi ile kullanım performansı etkileyebilir.</li>
+            <li>Netgsm sabit internet ve/veya telefon hizmetini Türk Telekomünikasyon A.Ş. altyapısı üzerinden sunacaktır.</li>
+            <li>Tüm bilgilendirmeler SMS yolu ile yapılmaktadır.</li>
+            <li>Paket kapsamında sunulan hizmet bedeli, müşterinin seçtiği tarife üzerinden Netgsm tarafından hesaplanarak, İnternet Hizmetleri için hizmet alınan ayın başında faturalandırılır.</li>
+        </ul>
+    </div>    </section>
+    
+              
+              <section class="cardOzellik">
+                                
+                  <div class="row" align="center">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-headset"></i> </div>
+                        <h6>Kesintisiz Destek</h6>
+                        <p>Çoğu operatör mesai saatleri dışında destek hizmeti vermemektedir. Netgsm ise mesai saatleri dışında da hizmet vermeye devam eder. </p>
+                      </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-credit-card"></i> </div>
+                        <h6>Geniş Ödeme Ağı</h6>
+                        <p>Kredi kartı, banka havale/EFT, otomatik ödeme, BKM express vb. ödeme kanalları ile faturalarınızı ödeyebilirsiniz. </p>
+                      </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-laptop"></i> </div>
+                        <h6>Farklı Platformlar</h6>
+                        <p>Netgsm aboneliğinize ait kullanıcı adı ve şifreniz ile webportal, API, masaüstü uygulama, mobil uygulama gibi tüm platformlardan kullanabilirsiniz. </p>
+                      </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-code"></i> </div>
+                        <h6>API Entegrasyon</h6>
+                        <p>Netgsm tarafından sağlanan tüm iletişim hizmetlerini API entegrasyonu sayesinde geliştirdiğiniz yazılımlara entegre edebilirsiniz.  </p>
+                      </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-award"></i> </div>
+                        <h6>BTK Lisanslı</h6>
+                        <p>BTK tarafından lisanslı, mevzuata uygun yasal gönderim yaparsınız. Yasalara uygun şekilde gönderim için ücretsiz destek alırsınız. </p>
+                      </div>
+                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4">
+                      <div class="feature">
+                        <div class="icon-circle"> <i class="fas fas fa-undo-alt"></i> </div>
+                        <h6>İletilmeyen İadesi</h6>
+                        <p>Yurt içi gönderimlerde, yalnızca ulaşan SMS'ler ücretlendirilmektedir. Ulaşmayan SMS'leri hesabınıza iade ediyoruz. </p>
+                      </div>
+                    </div>
+                      
+                  </div>
+              </section>		
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    
+      
+    
+    <footer id="FooterDark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6>Netgsm</h6>
+                    <ul class="mb-4">
+                        <li><a href="/hakkimizda">Hakkımızda</a></li>
+                        <li><a href="/banka-hesap-bilgileri">Banka Hesap Bilgileri</a></li>
+                        <li><a href="//evezne.netgsm.com.tr" target="_blank">E-vezne</a></li>
+                        <li><a href="/sozlesme-ve-formlar">Sözleşme ve Formlar</a></li>
+                        <li><a href="/bayilik/">Bayilik Sistemi</a></li>
+                        <li><a href="//ik.netgsm.com.tr" target="_blank">İnsan Kaynakları</a></li>
+                        <li><a href="//abonelik.netgsm.com.tr/bilgilendirme" target="_blank" class="fw-bold">Yeni Abonelik</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6>Kurumsal</h6>
+                    <ul>
+                        <li><a href="https://bilgibankasi.netgsm.com.tr/" target="_blank">Bilgi Bankası</a></li>
+                        <li><a href="/lisans-ve-tanitim">Lisans ve Tanıtım</a></li>
+                        <li><a href="/sartname-ornekleri">Şartname Örnekleri</a></li>
+                        <li><a href="javascript:void(0)" data-bs-toggle='modal' data-bs-target='#modalTuketici'>Tüketici Şikayetleri</a></li>
+                        <li><a href="/guvenli-internet">Güvenli İnternet</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6>Gerekli Belgeler</h6>
+                    <ul>
+                        <li><a href="http://netg.sm/S2m" target="_blank">Abonelik Belgeleri</a></li>
+                        <li><a href="/sozlesme-ve-formlar">Numara Taşıma</a></li>
+                        <li><a href="http://netg.sm/Kuq" target="_blank">Devir İşlemi</a></li>
+                        <li><a href="http://netg.sm/WBe" target="_blank">Yetkili Değişikliği</a></li>
+                        <li><a href="http://netg.sm/2gL" target="_blank">Yetkili İletişim Değişikliği </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-8 col-6">
+                    <ul>
+                        <li>
+                            Batı Bulvarı ATB İş Merkezi G Blok No:194 Macunköy Yenimahalle / ANKARA
+                        </li>
+                        <li class="mt-md-3 mt-2">
+                            <small>Çağrı Merkezi</small>
+                            <a href="tel:+90 850 303 0 303"><div class="fw-bold">+90 850 303 0 303</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" id="FooterAlt">
+                <div class="col-lg-9 col-md-12 col-12">
+                    <hr>
+                    <a href="/about-us">About Us</a>
+                    <a href="/gizlilik-ve-guvenlik/">Gizlilik ve Güvenlik</a>
+                    <div class="row mt-2">
+                        <div class="col-lg-8 col-md-6 mb-3">
+                            <small class="small">© 2024 | Netgsm İletişim ve Bilgi Teknolojileri A.Ş.</small>
+                        </div>
+                        <div class="col-lg-4 col-md-6" align="left" id="151eaeb8f8cb467a8a57acab52221bf7">
+                            <a href="https://www.gsma.com/membership/rapporteur-membership/" target="_blank"> <img src="/dist/images/gsma-logo.png" alt="gsma-logo" height="48px" width="auto" class="bg-white p-2" data-toggle="tooltip" data-placement="top" title="GSMA Rapporteur Members" loading="lazy"> </a>
+                            <a href="https://etbis.eticaret.gov.tr/sitedogrulama/151eaeb8f8cb467a8a57acab52221bf7" target="_blank">
+                                <img src="/dist/webp/etbis-qr.webp" onerror="this.onerror=null; this.src='/dist/images/etbis-qr.png'" alt="etbis-logo"  height="48px" width="auto" class="mt-0 mt-md-1 mt-lg-0 bg-white p-1" data-toggle="tooltip" data-placement="top" title="E-ticaret Bilgi Platformu" loading="lazy">
+                            </a>
+                            <a href="https://www.telekomder.org/" target="_blank"> <img src="/dist/images/telekomder-logo.svg" alt="telekomder-logo" width="82px" class="img-fluid" data-toggle="tooltip" data-placement="top" title="Rekabetçi Telekomünikasyon İşletmecileri Derneği Üyesi" loading="lazy"> </a>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-12 col-12 mt-md-0 mt-4">
+                    <a href="https://twitter.com/net_gsm" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/netgsmtr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://tr.linkedin.com/company/netgsm" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/netgsm" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <div class="modal fade" id="modalTuketici" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tüketici Şikayetleri</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Kullanıcı adı ve şifreniz ile Webportal'a giriş yaparak <b>Yardım & Destek</b> menüsünden talep oluşturabilir ve takibini yapabilirsiniz.
+                </div>
+                <div class="modal-footer">
+                    <a href="//portal.netgsm.com.tr" target="_blank">
+                        <button type="button" class="btn btn-outline-primary">Giriş</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    
+    <script>
+        $( document ).ready(function() {
+            $("#modalForm").on('shown.bs.modal', function(){
+                let url = $("#modalForm iframe").attr('data-src');
+                url += '&t=' + new Date().getTime();
+                $("#modalForm iframe").attr('src',url);
+            });
+            $("#modalFormData").on('shown.bs.modal', function(){
+                let url = $("#modalFormData iframe").attr('data-src');
+                url += '&t=' + new Date().getTime();
+                $("#modalFormData iframe").attr('src',url);
+            });
+            $("#modalFormM2M").on('shown.bs.modal', function(){
+                let url = $("#modalFormM2M iframe").attr('data-src');
+                url += '&t=' + new Date().getTime();
+                $("#modalFormM2M iframe").attr('src',url);
+            });
+            $("#modalNumaraSorgula").on('shown.bs.modal', function(){
+                let url = $("#modalNumaraSorgula iframe").attr('data-src');
+                url += '&t=' + new Date().getTime();
+                $("#modalNumaraSorgula iframe").attr('src',url);
+            });
+            $("#modalFormOzelPaket").on('shown.bs.modal', function(){
+                let url = $("#modalFormOzelPaket iframe").attr('data-src');
+                url += '&t=' + new Date().getTime();
+                $("#modalFormOzelPaket iframe").attr('src',url);
+            });
+            $("#modalFormAltyapi").on('shown.bs.modal', function(){
+                let url = $("#modalFormAltyapi iframe").attr('data-src');
+                url += '';
+                $("#modalFormAltyapi iframe").attr('src',url);
+            });
+            $("#modalSimKartDurum").on('shown.bs.modal', function(){
+                let url = $("#modalSimKartDurum iframe").attr('data-src');
+                url += '';
+                $("#modalSimKartDurum iframe").attr('src',url);
+            });
+    
+            $('#simkartIframe').on('load', function() {
+                var iframeHeight = $(this).contents().find('form').height();
+                $(this).height(iframeHeight);
+            });
+        });
+    </script>
+    
+    <input type="hidden" name="sayfayuklendi" id="sayfayuklendi" value="sayfayuklendi">
+    
+    </body>
+</html>

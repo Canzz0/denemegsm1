@@ -1,0 +1,26 @@
+.modal-title,
+.nav-top-menu a.login-link {
+  color: var(--firstColor);
+  font-weight: 600;
+}
+.modal-title.modalPadLarge {
+  padding-left: 30px;
+}
+
+.modal-title i {
+  padding-right: 5px;
+}
+
+.modal-body {
+  font-size: 17px !important;
+}
+
+.modal-body.modalPadLarge {
+  padding: 20px 50px 10px;
+}
+@media (max-width: 991.98px) {
+  .modal-lg,
+  .modal-xl {
+    max-width: 760px;
+  }
+}

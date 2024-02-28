@@ -1,0 +1,25 @@
+:root {
+  --globalColor: #18216d;
+  --firstColor: #005fec;
+  --secondColor: #ed7e41;
+  --firstBgColor: #f2f7fe;
+  --secondBgColor: #e6effe;
+  --soft-bg-primary: #f1f7ff;
+  --soft-bg-danger: #fff2f8;
+  --soft-bg-warning: #fff4ee;
+  --soft-bg-success: #ebf7f7;
+  --soft-bg-info: #e6f8f8;
+  --soft-color-primary: #2539ed;
+  --soft-color-danger: #ff007a;
+  --soft-color-warning: #ff9900;
+  --soft-color-success: #00da71;
+  --soft-color-info: #0dbab6;
+  --colorM2M: #ff863d;
+  --backgroundM2M: #fff4ee;
+  --backgroundM2M-v2: #ffe1ce;
+  --borderM2M: #ff863d;
+  --colorData: #6f3dff;
+  --backgroundData: #f8f5ff;
+  --backgroundData-v2: #eae2ff;
+  --borderData: #6f3dff;
+}
