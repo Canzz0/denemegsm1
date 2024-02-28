@@ -102,6 +102,7 @@
 }
 
 .breadcrumb {
+  display: none !important;
   margin-top: 4px;
   margin-bottom: 0;
 }
