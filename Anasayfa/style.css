@@ -146,6 +146,10 @@ hr {
   font-weight: 400 !important;
 }
 
+.col-megamenu ul li:hover {
+  background: var(--firstBgColor);
+}
+
 #FooterLight,
 #FooterLight #FooterAlt a,
 #FooterLight ul li a,
@@ -169,6 +173,32 @@ hr {
 .sss,
 .table-striped > tbody > tr:nth-of-type(odd) > * {
   color: var(--globalColor);
+}
+.col-megamenu {
+  padding: 2rem 1.6rem;
+}
+
+.navbar .has-megamenu {
+  position: static !important;
+}
+
+.cardOzellik.basliksizOzellikler .feature p,
+.col-megamenu ul {
+  margin-top: 16px;
+}
+
+.col-megamenu ul li {
+  padding: 10px 15px;
+}
+.col-megamenu h6 {
+  color: var(--firstColor);
+  font-size: 19px;
+  font-weight: 600;
+  padding-left: 15px;
+}
+
+.dropdown-menu {
+  left: 38%;
 }
 
 #tab-ozellikler .tab-content a,
