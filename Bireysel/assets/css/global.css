@@ -139,7 +139,7 @@
 }
 
 .section-bg-v3 {
-  background: url("./assets/images/header-background-v2.jpg") center;
+  background: url("../images/header-background-v2.jpg") center !important;
 }
 
 .spotlar-bg-white {
