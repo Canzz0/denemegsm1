@@ -1048,6 +1048,9 @@ section.page-header {
     font-size: 1.8rem;
     margin-bottom: 40px;
   }
+  .section-bg-v3 {
+    background: url("./assets/images/header-background-v2.jpg") center;
+  }
 
   .page-banner h1,
   .spotlar h1 {
