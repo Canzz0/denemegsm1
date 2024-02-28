@@ -11,58 +11,82 @@ const dropDownToggle = document.querySelector(".dropdown-toggle")
 const cdDropDown = document.querySelector(".cd-dropdown")
 const cdDropDownChildren = document.querySelectorAll(".cd-dropdown .has-children a")
 
-console.log(cdDropDownChildren)
+const accordionButton = document.querySelectorAll(".accordion-item .accordion-button")
+const accordionCollapse = document.querySelectorAll(".accordion-item .accordion-collapse")
 
-dropDownToggle.addEventListener("click", () => {
-  if (dropDownToggle.classList.length === 3) {
-    dropDownToggle.classList.remove("dropdown-is-active")
-    cdDropDown.classList.remove("dropdown-is-active")
-  } else {
-    dropDownToggle.classList.add("dropdown-is-active")
-    cdDropDown.classList.add("dropdown-is-active")
-  }
-})
+dropdownEvents()
+navbarEvents()
+accordionEvents()
 
-cdDropDownChildren.forEach((children) => {
-  children.addEventListener("mouseenter", () => {
-    children.classList.add("is-active")
-    children.parentElement.children[1].classList.add("is-active")
+function dropdownEvents() {
+  dropDownToggle.addEventListener("click", () => {
+    if (classValidation(dropDownToggle, "dropdown-is-active")) {
+      dropDownToggle.classList.remove("dropdown-is-active")
+      cdDropDown.classList.remove("dropdown-is-active")
+    } else {
+      dropDownToggle.classList.add("dropdown-is-active")
+      cdDropDown.classList.add("dropdown-is-active")
+    }
   })
-  children.addEventListener("mouseleave", () => {
-    children.classList.remove("is-active")
-    children.parentElement.children[1].classList.remove("is-active")
-  })
-})
 
-mobileButton.addEventListener("click", () => {
-  if (mobileMenu.classList.length === 5) {
+  cdDropDownChildren.forEach((children) => {
+    children.addEventListener("mouseenter", () => {
+      children.classList.add("is-active")
+      children.parentElement.children[1].classList.add("is-active")
+    })
+    children.addEventListener("mouseleave", () => {
+      children.classList.remove("is-active")
+      children.parentElement.children[1].classList.remove("is-active")
+    })
+  })
+}
+
+function navbarEvents() {
+  mobileButton.addEventListener("click", () => {
+    if (classValidation(mobileMenu, "opened")) {
+      mobileMenu.classList.remove("opened")
+      mobileMenuOverlay.classList.remove("overlayVisible")
+      mobileMenu.classList.remove("submenu-opened")
+    } else {
+      mobileMenu.classList.add("opened")
+      mobileMenuOverlay.classList.add("overlayVisible")
+    }
+  })
+
+  mobileMenuOverlay.addEventListener("click", () => {
     mobileMenu.classList.remove("opened")
     mobileMenuOverlay.classList.remove("overlayVisible")
     mobileMenu.classList.remove("submenu-opened")
-  } else {
-    mobileMenu.classList.add("opened")
-    mobileMenuOverlay.classList.add("overlayVisible")
-  }
-})
-
-mobileMenuOverlay.addEventListener("click", () => {
-  mobileMenu.classList.remove("opened")
-  mobileMenuOverlay.classList.remove("overlayVisible")
-  mobileMenu.classList.remove("submenu-opened")
-})
-
-subMenuToggle.forEach((menuButton) => {
-  menuButton.addEventListener("click", () => {
-    menuButton.parentElement.children[1].classList.add("opened")
-
-    mobileMenu.classList.add("submenu-opened")
   })
-})
 
-submenuHeader.forEach((subHeader) => {
-  subHeader.addEventListener("click", () => {
-    console.log(subHeader.parentElement.parentElement)
-    subHeader.parentElement.parentElement.classList.remove("opened")
-    mobileMenu.classList.remove("submenu-opened")
+  subMenuToggle.forEach((menuButton) => {
+    menuButton.addEventListener("click", () => {
+      menuButton.parentElement.children[1].classList.add("opened")
+
+      mobileMenu.classList.add("submenu-opened")
+    })
   })
-})
+
+  submenuHeader.forEach((subHeader) => {
+    subHeader.addEventListener("click", () => {
+      console.log(subHeader.parentElement.parentElement)
+      subHeader.parentElement.parentElement.classList.remove("opened")
+      mobileMenu.classList.remove("submenu-opened")
+    })
+  })
+}
+function accordionEvents() {
+  accordionButton.forEach((button, index) => {
+    button.addEventListener("click", () => {
+      if (classValidation(accordionCollapse[index], "show")) {
+        accordionCollapse[index].classList.remove("show")
+      } else {
+        accordionCollapse[index].classList.add("show")
+      }
+    })
+  })
+}
+
+function classValidation(element, className) {
+  return element.classList.contains(className)
+}
