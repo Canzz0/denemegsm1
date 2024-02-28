@@ -7,6 +7,9 @@ const subMenuToggle = document.querySelectorAll("li.has-submenu>a")
 const subMenu = document.querySelectorAll(".submenu")
 const submenuHeader = document.querySelectorAll(".has-submenu .submenu-header>a")
 
+const megaMenuToggle = document.querySelector("li.has-megamenu>a")
+const megaMenu = document.querySelector("li.has-megamenu .megamenu")
+
 const dropDownToggle = document.querySelector(".dropdown-toggle")
 const cdDropDown = document.querySelector(".cd-dropdown")
 const cdDropDownChildren = document.querySelectorAll(".cd-dropdown .has-children a")
@@ -73,6 +76,16 @@ function navbarEvents() {
       subHeader.parentElement.parentElement.classList.remove("opened")
       mobileMenu.classList.remove("submenu-opened")
     })
+  })
+
+  megaMenuToggle.addEventListener("click", () => {
+    if (classValidation(megaMenu, "show")) {
+      megaMenu.classList.remove("show")
+      megaMenuToggle.classList.remove("show")
+    } else {
+      megaMenu.classList.add("show")
+      megaMenuToggle.classList.add("show")
+    }
   })
 }
 function accordionEvents() {
