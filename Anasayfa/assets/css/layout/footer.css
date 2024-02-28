@@ -1,0 +1,86 @@
+/* FooterLight */
+#FooterLight,
+#FooterLight #FooterAlt a,
+#FooterLight ul li a {
+  color: var(--globalColor);
+}
+
+/* FooterDark */
+#FooterDark {
+  background: var(--globalColor);
+  color: #fff;
+}
+
+#FooterDark #FooterAlt a,
+#FooterDark ul li a,
+#FooterDark ul li a:hover {
+  color: #fff;
+}
+
+/* FooterAlt */
+#FooterAlt a i {
+  font-size: 18px;
+}
+
+footer {
+  padding: 40px 0 20px;
+}
+
+footer h6 {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+footer ul li {
+  margin-left: -32px;
+  margin-bottom: 4px;
+}
+
+footer ul li a {
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+#FooterAlt a:hover,
+.breadcrumb-item:hover,
+footer ul li a:hover {
+  opacity: 1;
+}
+
+#FooterAlt hr {
+  margin-bottom: 8px !important;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+#FooterAlt a {
+  color: #fff;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+#FooterAlt a i {
+  margin-top: 6px;
+}
+
+#FooterAlt .small {
+  margin-top: 24px;
+  opacity: 0.4;
+}
+
+/* Media Query */
+@media (max-width: 575.98px) {
+  footer ul li {
+    margin-bottom: 8px;
+  }
+
+  #FooterAlt a {
+    padding-right: 24px;
+  }
+
+  #FooterAlt a i {
+    font-size: 20px;
+  }
+}
