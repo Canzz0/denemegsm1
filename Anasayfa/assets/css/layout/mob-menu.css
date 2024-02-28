@@ -1,0 +1,173 @@
+/* Main menu and submenu background color and position */
+.mobMenuHMH {
+  z-index: 9999;
+}
+
+.mobMenuHMH,
+.mobMenuHMH .submenu {
+  background-color: #fff; /* White background */
+  bottom: 0;
+  overflow: hidden;
+  top: 0;
+}
+
+/* When mobile menu is visible */
+.mobMenuVisible {
+  transform: translateX(0%) !important; /* Translate to visible */
+}
+
+/* Main menu styles */
+.mobMenuHMH {
+  color: var(--globalColor); /* Global color */
+  width: 320px;
+  overflow-y: auto;
+  pointer-events: none;
+  position: fixed;
+  transform: translateX(-100%); /* Initially translate to right */
+  z-index: 999999 !important;
+}
+
+/* Main menu list */
+.mobMenuHMH ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Main menu link icons */
+.mobMenuHMH ul > li > a > i {
+  width: 36px;
+  text-align: center;
+}
+
+/* Main menu links */
+.mobMenuHMH ul > li > a {
+  color: inherit;
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px 10px;
+  transition: 150ms;
+}
+
+/* Main menu links hover */
+.mobMenuHMH ul > li > a:hover {
+  color: var(--firstColor); /* First color */
+  border-radius: 3px;
+}
+
+/* Submenu arrow active */
+.mobMenuHMH ul > li.has-submenu > a:hover {
+  background-image: url("./assets/images/submenu-arrow-active.svg");
+}
+
+/* Submenu links */
+.mobMenuHMH .submenu ul > li > a {
+  padding-left: 42px;
+  font-weight: 400;
+}
+
+/* Submenu header link */
+.mobMenuHMH .submenu-header > a {
+  color: var(--globalColor); /* Global color */
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 18px 20px 18px 44px;
+}
+.mobMenuHMH ul > li.has-submenu > a,
+.has-submenu .submenu.opened li.has-submenu a {
+  background-image: url("../../images/submenu-arrow.svg") !important;
+  background-position: right 20px center !important;
+  background-repeat: no-repeat;
+  background-size: 8px 12px;
+}
+
+/* Submenu header link icon */
+.mobMenuHMH .submenu-header > a:before {
+  content: "";
+  height: 100%;
+  left: 26px;
+  position: absolute;
+  top: 0;
+  transform: rotate(-180deg);
+  width: 20px;
+}
+
+/* Submenu label */
+.mobMenuHMH .submenu > label {
+  color: var(--firstColor); /* First color */
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  margin-top: 19px;
+  opacity: 1;
+  padding-left: 40px;
+  width: 100%;
+}
+
+/* Menu transition effect */
+.mobMenuHMH .submenu:not(.no-transition),
+.mobMenuHMH:not(.no-transition) {
+  transition: 250ms;
+}
+
+/* Mobile menu overlay */
+.mobMenuHMH-overlay {
+  background-color: rgba(19, 15, 64, 0.35);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 99998;
+}
+
+/* Mobile menu opened */
+.mobMenuHMH.opened {
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+/* Submenu positioning */
+.mobMenuHMH .submenu {
+  left: 320px;
+  min-height: 100%;
+  overflow-y: auto;
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+}
+
+/* Opened submenu */
+.mobMenuHMH .submenu.opened {
+  left: 0;
+  pointer-events: auto;
+}
+
+/* Mobile menu logo and link underline */
+.mobMenuHMH .mobileLogo,
+.mobMenuHMH ul > li:not(:last-child) > a {
+  border-bottom: 1px solid var(--firstBgColor);
+}
+
+/* Mobile menu link background color on hover */
+.mobMenuHMH ul > li > a:hover {
+  background-color: var(--firstBgColor);
+}
+
+/* Mobile menu logo padding */
+.mobMenuHMH .mobileLogo {
+  padding: 30px;
+}
+
+.mobMenuHMH .submenu-header {
+  background-image: url("../../images/menu-back.svg") !important;
+  background-position: left 20px !important;
+
+  background: no-repeat !important;
+  border-bottom: 1px solid #efefef !important;
+  cursor: pointer !important;
+  position: relative !important;
+}
