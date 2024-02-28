@@ -9,20 +9,29 @@ const submenuHeader = document.querySelectorAll(".has-submenu .submenu-header>a"
 
 const dropDownToggle = document.querySelector(".dropdown-toggle")
 const cdDropDown = document.querySelector(".cd-dropdown")
+const cdDropDownChildren = document.querySelectorAll(".cd-dropdown .has-children a")
 
-console.log(submenuHeader)
+console.log(cdDropDownChildren)
 
-dropDownToggle.addEventListener("mouseenter", () => {
-  dropDownToggle.classList.add("dropdown-is-active")
-  cdDropDown.classList.add("dropdown-is-active")
-})
 dropDownToggle.addEventListener("click", () => {
-  dropDownToggle.classList.add("dropdown-is-active")
-  cdDropDown.classList.add("dropdown-is-active")
+  if (dropDownToggle.classList.length === 3) {
+    dropDownToggle.classList.remove("dropdown-is-active")
+    cdDropDown.classList.remove("dropdown-is-active")
+  } else {
+    dropDownToggle.classList.add("dropdown-is-active")
+    cdDropDown.classList.add("dropdown-is-active")
+  }
 })
-dropDownToggle.addEventListener("mouseleave", () => {
-  dropDownToggle.classList.remove("dropdown-is-active")
-  cdDropDown.classList.remove("dropdown-is-active")
+
+cdDropDownChildren.forEach((children) => {
+  children.addEventListener("mouseenter", () => {
+    children.classList.add("is-active")
+    children.parentElement.children[1].classList.add("is-active")
+  })
+  children.addEventListener("mouseleave", () => {
+    children.classList.remove("is-active")
+    children.parentElement.children[1].classList.remove("is-active")
+  })
 })
 
 mobileButton.addEventListener("click", () => {
