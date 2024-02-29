@@ -1,0 +1,147 @@
+.fw500 {
+  font-weight: 500 !important;
+}
+
+.ulli {
+  padding-left: 2.2rem;
+  font-size: 18px;
+}
+
+.ulli.x16px,
+.ulli.x16px a {
+  font-size: 16px !important;
+}
+
+.ulli.notlar li {
+  margin-bottom: 6px;
+}
+
+.ulli.x16px li {
+  line-height: 1.4rem;
+  margin-bottom: 4px;
+}
+
+.ulli.x13px {
+  line-height: 1.2rem;
+  margin-bottom: 2px;
+  font-weight: 300 !important;
+}
+
+.ulli.x13px li {
+  font-size: 13px !important;
+  opacity: 0.75;
+}
+
+.ulli li a:hover {
+  text-decoration: underline;
+}
+
+.ulli li::marker {
+  color: var(--firstColor);
+  font-size: 28px;
+}
+
+.ulli.x16px li::marker {
+  font-size: 24px;
+}
+
+.ulli.x13px li::marker {
+  font-size: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .ulli {
+    padding-left: 1.4rem;
+  }
+
+  .ulli li {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ulli {
+    padding-left: 1.6rem;
+  }
+}
+
+.soft-bg-icon {
+  padding: 16px;
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  font-size: 32px;
+}
+
+.soft-bg-icon.soft-bg-primary {
+  background: #f1f7ff;
+  color: #2539ed;
+}
+
+.soft-bg-icon.soft-bg-danger {
+  background: #fff2f8;
+  color: #ff007a;
+}
+
+.soft-bg-icon.soft-bg-warning {
+  background: #fff7e3;
+  color: #f90;
+}
+
+.soft-bg-icon.soft-bg-success {
+  background: #deffee;
+  color: #00da71;
+}
+
+.soft-bg-icon.soft-bg-info {
+  background: #e6f8f8;
+  color: #0dbab6;
+}
+
+.soft-bg-primary {
+  background: var(--soft-bg-primary);
+}
+
+.soft-bg-danger {
+  background: var(--soft-bg-danger);
+}
+
+.soft-bg-warning {
+  background: var(--soft-bg-warning);
+}
+
+.soft-bg-success {
+  background: var(--soft-bg-success);
+}
+
+.soft-bg-info {
+  background: var(--soft-bg-info);
+}
+
+.soft-color-primary {
+  color: var(--soft-color-primary);
+}
+
+.soft-color-danger {
+  color: var(--soft-color-danger);
+}
+
+.soft-color-warning {
+  color: var(--soft-color-warning);
+}
+
+.soft-color-success {
+  color: var(--soft-color-success);
+}
+
+.soft-color-info {
+  color: var(--soft-color-info);
+}
+
+.section-bg-v3 {
+  background: url("../images/header-background-v2.jpg") center !important;
+}
+
+.spotlar-bg-white {
+  background: #fff;
+}
