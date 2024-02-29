@@ -62,7 +62,9 @@ table {
 .section-bg-v3 {
   background: url("/assets//images/header-background-v2.jpg");
 }
-
+ul{
+  list-style: none
+}
 .col-megamenu ul a li,
 h6 {
   font-size: 18px;

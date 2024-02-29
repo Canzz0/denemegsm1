@@ -21,7 +21,9 @@ body {
   color: var(--globalColor);
   font-weight: 300;
 }
-
+ul{
+  list-style: none
+}
 section {
   margin: 60px 0;
 }
@@ -42,7 +44,13 @@ table {
   border-spacing: 0;
 }
 
-.container {
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
   padding-right: var(--bs-gutter-x, 1rem);
   padding-left: var(--bs-gutter-x, 1rem);
 }

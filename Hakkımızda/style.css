@@ -21,7 +21,9 @@ body {
   color: var(--globalColor);
   font-weight: 300;
 }
-
+ul{
+  list-style: none
+}
 section {
   margin: 60px 0;
 }
