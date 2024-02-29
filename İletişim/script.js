@@ -103,3 +103,5 @@ function accordionEvents() {
 function classValidation(element, className) {
   return element.classList.contains(className)
 }
+
+

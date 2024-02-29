@@ -32,16 +32,16 @@ function dropdownEvents() {
     }
   })
 
-  cdDropDownChildren.forEach((children) => {
-    children.addEventListener("mouseenter", () => {
-      children.classList.add("is-active")
-      children.parentElement.children[1].classList.add("is-active")
-    })
-    children.addEventListener("mouseleave", () => {
-      children.classList.remove("is-active")
-      children.parentElement.children[1].classList.remove("is-active")
-    })
-  })
+  // cdDropDownChildren.forEach((children) => {
+  //   children.addEventListener("mouseenter", () => {
+  //     children.classList.add("is-active")
+  //     children.parentElement.children[1].classList.add("is-active")
+  //   })
+  //   children.addEventListener("mouseleave", () => {
+  //     children.classList.remove("is-active")
+  //     children.parentElement.children[1].classList.remove("is-active")
+  //   })
+  // })
 }
 
 function navbarEvents() {

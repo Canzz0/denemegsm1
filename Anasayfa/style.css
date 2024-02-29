@@ -40,24 +40,7 @@ body {
   font-weight: 300;
 }
 
-.dropdown-toggle:hover > .dropdown-menu,
-.mobMenuHMH ul > li,
-.mobMenuHMH-opened .mobMenuHMH-overlay,
-.navbar .nav-item:hover .dropdown-menu,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-menu,
-nav,
-section {
-  display: block;
-}
+
 body {
   margin: 0;
   padding: 0;
@@ -103,7 +86,9 @@ a {
 a:hover {
   color: var(--firstColor);
 }
-
+.accordion-button{
+  cursor: pointer;
+ }
 .accordion-button.collapsed,
 .bootstrap-select > .btn-light,
 .colorGlobal {
